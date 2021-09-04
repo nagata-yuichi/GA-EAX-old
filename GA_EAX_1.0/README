@@ -33,7 +33,7 @@ CONTENTS
 Two program codes: "Normal" version and "Large" version
 
 
-Each program code consists of the following files:
+Each version consists of the following files:
 
 main.cpp
  - The main function
@@ -48,7 +48,7 @@ cross.cpp cross.h
  - Edge assembly crossover
 
 evaluator.cpp evaluator.h
- - Procedures specific to the TSP instance
+ - Pre-processing procedures to the TSP instance
 
 indi.cpp, indi.h 
  - An individual (tour)
