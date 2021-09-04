@@ -17,7 +17,7 @@ salesman problem (TSP) presented in our paper:
 
 Yuichi Nagata and Sigenobu Kobayashi, Powerful Genetic Algorithm using Edge 
 Assembly Crossover for the Traveling Salesman Problem, Informs Journal on 
-Computing *, *-* (2012) 
+Computing, Vol. 25, No. 2, pp. 346–363 (2013)
 
 The code is written in C++ and is distributed for research use. The author 
 reserves all rights to the code. The implemented algorithm is the default GA
@@ -86,7 +86,7 @@ USAGE
 It is recommended to use the Normal version. If the Normal version cannot 
 work due to the lack of memory in your computer (e.g. 5.3GB (N = 25000)), 
 use the Large version (e.g. 730MB (N = 25000)). The Large version will be 
-about 1.3-1.5 times slower (see Appendix B of the Online Supplement). 
+about 1.3-1.5 times slower (see Appendix B of the Online Supplement of the paper). 
 
 
 Execute the following command to run the GA.
@@ -169,13 +169,13 @@ TEnvironment::Init() and TerminationCondition() in env.cpp.
   fFlagC[ 0 ] = 4;  /* Diversity preservation: 1:Greedy, 3:Distance, 4:Entropy */
   fFlagC[ 1 ] = 2;  /* Eset Type: 1:Single-AB, 2:Block2 */ 
 
-  Example3: The greedy selection is used instead of entropy-preserving selection.
+  Example3: The greedy selection is used instead of the entropy-preserving selection.
   fStage = 1;       /* Stage I */
   fFlagC[ 0 ] = 1;  /* Diversity preservation: 1:Greedy, 3:Distance, 4:Entropy */
-  fFlagC[ 1 ] = 2;  /* Eset Type: 1:Single-AB, 2:Block2 */ 
+  fFlagC[ 1 ] = 1;  /* Eset Type: 1:Single-AB, 2:Block2 */ 
 
 
-When you wish to run the GA on a TSP instances having a spesific definition of 
+When you wish to run the GA on a TSP instance with a specific definition of 
 the edge length, please modify the function TEvaluator::SetInstance in evaluator.cpp
 
 
