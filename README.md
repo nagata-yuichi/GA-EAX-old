@@ -8,4 +8,4 @@ This code was originally published as a supplementary material to this paper, bu
 
 # Usage and description of each file
 
-See README fine in GA_EAX_1.0
+See the README file in GA_EAX_1.0.
