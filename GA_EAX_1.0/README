@@ -62,9 +62,6 @@ sort.cpp, sort.h
 ***.tsp
  - Several TSP instances (TSPLIB format)
 
-build.exe
- - Use it to compile the code 
-
 
 
 =======
@@ -74,8 +71,7 @@ COMPILE
 Perform the following commands. Then, the executable file "jikken" will be 
 created.
 
-chmod +x build.exe
-./build.exe
+g++ -o jikken -O3 main.cpp env.cpp cross.cpp evaluator.cpp indi.cpp rand.cpp kopt.cpp sort.cpp -lm
 
 
 
